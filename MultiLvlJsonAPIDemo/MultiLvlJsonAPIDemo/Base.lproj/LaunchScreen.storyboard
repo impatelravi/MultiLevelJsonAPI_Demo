@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGN-Pz-0cz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOg-Zc-dBO">
+                                        <rect key="frame" x="16" y="302" width="382" height="292.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FVC-3j-5FE">
+                                                <rect key="frame" x="65.5" y="1" width="251" height="249"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="FVC-3j-5FE" secondAttribute="height" multiplier="1:1" id="e3m-pJ-WOp"/>
+                                                    <constraint firstAttribute="height" constant="251" id="ilg-hn-bc6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multi Level Json API Demo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6v-GY-Ezn">
+                                                <rect key="frame" x="0.0" y="267" width="382" height="25.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="V6v-GY-Ezn" secondAttribute="bottom" id="3cL-ka-Fdb"/>
+                                            <constraint firstItem="FVC-3j-5FE" firstAttribute="top" secondItem="nOg-Zc-dBO" secondAttribute="top" id="Jev-3b-rQu"/>
+                                            <constraint firstItem="FVC-3j-5FE" firstAttribute="centerX" secondItem="nOg-Zc-dBO" secondAttribute="centerX" id="Qoh-0z-s9O"/>
+                                            <constraint firstItem="V6v-GY-Ezn" firstAttribute="top" secondItem="FVC-3j-5FE" secondAttribute="bottom" constant="16" id="Ri3-H4-IPh"/>
+                                            <constraint firstAttribute="trailing" secondItem="V6v-GY-Ezn" secondAttribute="trailing" id="cM0-Gd-4qF"/>
+                                            <constraint firstItem="V6v-GY-Ezn" firstAttribute="leading" secondItem="nOg-Zc-dBO" secondAttribute="leading" id="r68-T5-vGl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nOg-Zc-dBO" secondAttribute="trailing" constant="16" id="XRa-gx-vHt"/>
+                                    <constraint firstItem="nOg-Zc-dBO" firstAttribute="centerY" secondItem="IGN-Pz-0cz" secondAttribute="centerY" id="oVz-gH-uIs"/>
+                                    <constraint firstItem="nOg-Zc-dBO" firstAttribute="leading" secondItem="IGN-Pz-0cz" secondAttribute="leading" constant="16" id="p7H-KF-MGx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IGN-Pz-0cz" secondAttribute="bottom" id="J1G-2N-UjE"/>
+                            <constraint firstItem="IGN-Pz-0cz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y6r-PM-SAF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IGN-Pz-0cz" secondAttribute="trailing" id="dfD-Wz-PaP"/>
+                            <constraint firstItem="IGN-Pz-0cz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vlG-aG-mVH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
